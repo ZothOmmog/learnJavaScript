@@ -1,0 +1,45 @@
+$drop-marker-width: 25px;
+$drop-marker-color: green;
+
+.menu {
+    margin: 15px;
+    max-width: 240px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 25px;
+        cursor: pointer;
+
+        &::before {
+            content: '▶';
+            display: inline-block;
+            width: $drop-marker-width;
+            color: $drop-marker-color;
+        }
+    }
+    
+    &__body {
+        display: none;
+    }
+
+    &_drop {
+        .menu__body {
+            display: block;
+        }
+
+        .menu__title::before {
+            content: '▼';
+            display: inline-block;
+            width: $drop-marker-width;
+            color: $drop-marker-color;
+        }
+    }
+}
+
+.list {
+    margin: 0;
+    list-style: none;
+    padding: 0 $drop-marker-width;
+}
