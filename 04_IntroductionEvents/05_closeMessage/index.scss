@@ -1,0 +1,39 @@
+h3 {
+    margin: 0;
+    padding-bottom: .3em;
+    font-size: 1.1em;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 .5em;
+}
+
+.pane {
+    position: relative;
+    background: #edf5e1;
+    padding: 10px 20px 10px;
+    border-top: solid 2px #c4df9b;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.pane-group {
+    max-width: 500px;
+}
+
+.remove-button {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    font-size: 110%;
+    color: darkred;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.slider {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    max-width: 500px;
+
+    &__button {
+        padding: 10px;
+    }
+
+    &__body {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    &__list {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        transition: 1s;
+        left: 0;
+        right: 0;
+    }
+
+    &__item {
+        width: 33.33%;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+}
